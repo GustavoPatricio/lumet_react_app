@@ -1,0 +1,183 @@
+
+  /* navbar */
+
+  nav { 
+   width: 100vw;
+   height: 6%;
+   background-color: #FFFFFF;
+   position: fixed;
+   z-index: 100;
+   box-shadow: 1px 2px 5px #3f3f3fc2;
+   padding: .5vh 5vw;
+   display: flex;
+
+ }
+
+ #menu { 
+   display: none;
+ }
+
+ #NavContentWrapper {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   height: 100%;
+ }
+
+ nav #logo {
+   width: 6vw;
+   height: auto;
+   margin-top: auto;
+   margin-bottom: auto;
+   cursor: pointer;
+ }
+
+ #NavDeskItems {
+   display: flex;
+   height: fit-content;
+   margin-top: auto;
+   margin-bottom: auto;
+ }
+
+ #ContactItems {
+   margin-top: auto;
+   margin-bottom: auto;
+   height: fit-content;
+ }
+ 
+ .middle-buttons { 
+   font-family: "Inter-semibold";
+   font-size: 140%;
+   color: #2B2D33;
+   background-color: #E2E2E2;
+   border-radius: 200px;
+   text-align: center;
+   width: 7rem;
+   transition: .5s ease-in-out;
+ }
+
+ .middle-buttons:hover { 
+   text-decoration: none;
+   color: #2B2D33;
+   background-color: rgb(197, 197, 197);
+ }
+
+ .right-buttons {
+   color: #2B2D33;
+   font-family: "inter-regular", sans-serif;
+   transition: all .6s ease-in-out;
+ }
+ 
+ .right-buttons:hover {
+   text-decoration: none;
+   color: #ff4f40;
+ }
+
+ /* SIDE BAR */
+
+ 
+ #sidebar { 
+   display: none; /* não aparece em desk */
+   width: 70vw;
+   background-color: white;
+   height: 100vh;
+   position: fixed;
+   z-index: 200;
+   flex-direction: column;
+   box-shadow: 1px 2px 5px rgba(44, 44, 44, 0.733);
+   transition: transform .7s ease-in-out;
+ }
+
+ .menuslideoff { 
+   transform: translateX(-110%);
+ }
+
+ .menuslideon { 
+   transform: translateX(0%);
+ }
+
+ #sidebar img { 
+   width: 2rem;
+
+   margin-top: 2vh;
+   margin-left: auto;
+   margin-right: auto;
+   
+ }
+
+ #sideItems1, #sideItems2 { 
+   width: 100%;
+   height: 5vh;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+ }
+
+ #sidebar a { 
+   color: #2B2D33;
+   font-family: "Inter-regular";
+   font-size: 1.2rem;
+   margin-top: 2vh;
+   padding: 1vh 0;
+ }
+
+ #sideItems1 { 
+   margin-top: 10vh;
+ }
+
+ #sideItems2 { 
+   margin-top: 15vh;
+ }
+
+ #sideItems1 a { 
+   background-color: #E2E2E2
+ }
+
+ #sideItems2 a { 
+   background-color: #F4F3F2;
+ }
+
+ /* blackground */
+
+ #blackground { 
+   position: fixed;
+   background-color: rgba(0, 0, 0, 0.671);
+   z-index: 150;
+   width: 100vw;
+   height: 100vh;
+   display: none;
+ }
+
+/* media query */
+
+@media (max-width: 1200px) {
+ nav #logo { 
+   width: 6rem;
+ }
+ 
+}
+
+@media (max-width: 992px) { 
+
+ #NavDeskItems, #ContactItems {
+   display: none;
+ }
+
+ #menu { 
+   width: 2rem;
+   height: auto;
+   align-self: center;
+   display: block;
+   position: absolute;
+ }
+
+ nav #logo { 
+   width: 15vh;
+   margin: auto;
+ }
+
+ #sidebar { 
+   display: flex;
+ }
+
+}

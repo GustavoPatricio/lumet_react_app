@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
-}
+/* LUMET COMPANY BY SIDNEI FAGIAN AND GUSTAVO PATRICIO @BRAZIL*/
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* SITE ESTRUTURADO EM SECTIONS (PARTES DA PÁGINA QUE OCUPAM A TELA [CONJUNTO DE INFORMAÇÕES])*/
+/* lumetdesign@gmail.com */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Fontes Lumet */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+@font-face {
+   font-family: "inter-black";
+   src: url("pages/fonts/Inter-Black.otf");
+ }
+ 
+ @font-face {
+   font-family: "inter-semibold";
+   src: url("pages/fonts/Inter-SemiBold.otf");
+ }
+ 
+ @font-face {
+   font-family: "inter-bold";
+   src: url("pages/fonts/Inter-Bold.otf");
+ }
+ 
+ @font-face {
+   font-family: "inter-regular";
+   src: url("pages/fonts/Inter-Regular.otf");
+ }
+ 
+ @font-face {
+   font-family: "inter-light";
+   src: url("pages/fonts/Inter-Light.otf");
+ }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ * {
+   padding: 0;
+   margin: 0;
+ }
+ 
+ html,
+ body {
+   width: 100vw;
+   box-sizing: border-box;
+   max-width: 100vw;
+   overflow-x: hidden;
+ }
+ 
+ h1, h2, h3 {
+   font-family: "inter-bold", sans-serif;
+   font-size: 2rem;
+ }
