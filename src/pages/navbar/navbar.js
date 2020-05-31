@@ -3,6 +3,7 @@ import './navbar.css';
 import logo from '../images/logo.svg';
 import justlogo from '../images/justlogo.svg';
 import burger from '../images/burger.png';
+import { Link } from 'react-router-dom';
 
 class Navbar extends React.Component { 
 
@@ -10,12 +11,6 @@ class Navbar extends React.Component {
       var menu = document.getElementById("menu");
       var blackground = document.getElementById("blackground");
       var sidebar = document.getElementById("sidebar");
-      var logo = document.getElementById("logo");
-   
-      logo.addEventListener("click", () => {
-          document.location.href = "/index.html"
-      });
-   
    
       blackground.addEventListener("click", () => {
           sidebar.classList.toggle("menuslideoff");
@@ -31,7 +26,7 @@ class Navbar extends React.Component {
    }
 
    componentDidMount() { 
-      this.menu;
+      this.menu();
    }
 
    render() { 
@@ -42,14 +37,14 @@ class Navbar extends React.Component {
          <nav>
             <div id="NavContentWrapper">
                 <img src={burger} id="menu" />
-                <div id="logo"><img src={logo}/></div>
+                <div id="logo"><Link to="/"><img src={logo}/></Link></div>
                 <div id="NavDeskItems">
-                    <a href="#" className="middle-buttons"><div> Aulas </div> </a>
-                    <a href="#" className="middle-buttons"> Cursos </a>
+                    <Link to="/aulas" className="middle-buttons" style={{ marginRight: '2vw' }}><div> Aulas </div> </Link>
+                    <Link to="/cursos" className="middle-buttons"> Cursos </Link>
                 </div>
                 <div id="ContactItems">
-                    <a href="#" className="right-buttons"> Quem somos </a>
-                    <a href="contato.html" className="right-buttons"> Contato </a>
+                    <Link to="/sobre" className="right-buttons"> Quem somos </Link>
+                    <Link to="/contato" className="right-buttons"  style={{marginLeft: '1vw'}}> Contato </Link>
                 </div>
             </div>
          </nav>
