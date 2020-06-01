@@ -1,0 +1,181 @@
+
+/* section 1*/
+
+#section1Wrapper, #section3Wrapper { 
+   background-color: #33343F;
+}
+
+.h100 { 
+ height: 100vh;
+}
+
+#section1Wrapper h1 {
+   color: white !important;
+   font-size: 220%;
+   /* right: 6rem;
+   top: 17rem; */
+   margin-right: 5rem;
+   margin-bottom: 5rem;
+   float: right;
+ }
+ 
+ #section1Wrapper h1 span {
+   color: #ff4f40 !important;
+ }
+
+ #anim1 svg{ 
+   max-height: 80vh;
+ }
+
+/* section 2 */
+
+#section2Wrapper {
+ background-color: #f4f3f2;
+}
+
+#section2Wrapper h1 {
+ color: #33343f !important;
+ text-align: right;
+}
+
+#section2Wrapper h1 span {
+ color: #ff4f40 !important;
+}
+
+
+/* section 3 */
+
+#section3Wrapper h1 {
+ font-size: 250%;
+ color: white;
+ padding-top: 5rem;
+ text-align: center;
+ font-family: "inter-regular", sans-serif !important;
+}
+
+#section3Wrapper h1 span {
+ font-family: "inter-bold", sans-serif !important;
+}
+
+#buttonsWrapper { 
+ margin-top: 10vh;
+}
+
+#anim3 {
+ height: 80vh;
+}
+
+.lumetButton { 
+ width: 100%;
+ display: block;
+ text-align: center;
+ text-decoration: none;
+ color: white;
+ background-color: #ff4f40;
+ font-family: "inter-semibold", sans-serif;
+ font-size: 1.5rem;
+ padding: 1vh 2vw;
+ border-radius: 6px;
+}
+
+/* media queries */
+
+
+@media (max-width: 1280px) { 
+ #section1Wrapper h1 { 
+   font-size: 1.8rem;
+ }
+
+ #section2Wrapper h1 { 
+   font-size: 1.65rem;
+ }
+ 
+ #section3Wrapper h1 {
+   font-size: 190%;
+ }
+
+}
+
+
+
+@media (max-width: 992px){ 
+ #section1Wrapper h1 {
+   margin: 0;
+   margin-top: 15vh;
+   width: 100%;
+   text-align: center;
+ } 
+
+ #anim1Wrapper { 
+   margin-bottom: 15vh;
+ }
+
+ /******************/
+
+
+ #section2Wrapper h1 {
+   margin: 0;
+   margin: auto;
+   margin-top: 15vh;
+   font-size: 150%;
+   width: fit-content;
+   text-align: left;
+ }
+
+ #anim2Wrapper  {
+   margin-bottom: 15vh;
+ }
+
+ /***********/
+ #buttonsWrapper { 
+   margin: 0;
+   margin-top: 4vh;
+   margin-left: auto;
+   margin-right: auto;
+   width: fit-content;
+ }
+
+ #section3Wrapper h1 { 
+   padding: 0;
+ }
+
+ .lumetButton { 
+   font-size: 1.2rem;
+ }
+
+ #anim3 {
+   height: unset;
+ }
+
+}
+
+@media (max-width: 768px){ 
+ #anim1Wrapper { 
+   margin-bottom: 0;
+ }
+
+ #anim1 { 
+   width: 100%;
+   height: auto;
+ }
+
+ #anim2Wrapper  {
+   margin-bottom: 0;
+ }
+
+ #section2Wrapper h1 {
+   margin: 0;
+   margin-top: 5vh;
+   font-size: 1.35rem;
+ }
+
+ #section1Wrapper, #section2Wrapper { 
+   height: 80vh;
+ }
+ 
+ #section3Wrapper { 
+   height: 100vh;
+ }
+
+}
+
