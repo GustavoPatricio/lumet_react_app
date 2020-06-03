@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Switch, Redirect, Link } from 'react-rou
 import Contato from './pages/contato/contato';
 import Home from './pages/home/home';
 import Navbar from './pages/navbar/navbar';
+import Sobre from './pages/sobre/sobre';
 import './App.css';
 
 class App extends React.Component { 
@@ -14,6 +15,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/contato" component={Contato} />
+          <Route exact path="/sobre" component={Sobre} />
         </Switch>
       </Router>
     )

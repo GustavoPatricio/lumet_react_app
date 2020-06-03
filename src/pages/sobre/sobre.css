@@ -1,0 +1,73 @@
+.sobre_sec { 
+   width: 100vw;
+   height: 100vh;
+   background-color: #F4F3F2;
+   display: flex;
+   flex-direction: column;
+}
+
+.sobre_pessoaWrapper { /* container inteiro (info + foto)*/
+   background-color: transparent;
+   width: 70vw;
+   height: 60vh;
+   margin: auto;
+   display: flex;
+}
+
+.sobre_pictureWrapper { /* só a parte da foto e do nome */
+   width: 40%;
+   height: 100%;
+   position: relative;
+}
+
+.sobre_pictureWrapper img { 
+   border-radius: 4px;
+   float: right;
+   height: 90%;
+   width: auto;
+}
+
+.sobre_infoWrapper { /* Parte da direita */
+   width: 60%;
+   height: 100%;
+   float: right;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.sobre_nomeContainer { 
+   background-color: red;
+   position: absolute;
+   right: 20%;
+   bottom: 5%;
+   color: white;
+   font-size: 1.5rem;
+   font-family: "inter-semibold";
+   padding: .5vh .8vw;
+}
+
+.sobre_descricao { 
+   width: 70%;
+   height: fit-content;
+   margin-left: 10%;
+   margin-bottom: 10%;
+   font-family: "inter";
+   font-size: 1.2rem;
+}
+
+#sidnei .sobre_nomeContainer {
+   right: 40%;
+}
+/* 
+#sidnei .sobre_nomeContainer::after { 
+   content: " Co-fundador Lumet & videomaker ";
+   display: block;
+   position: absolute;
+   width: 50vw;
+   text-align: left;
+   padding-top: 1vh;
+   color: #1d1d1d;
+   font-family: "inter-light";
+   font-size: 1rem;
+} */
