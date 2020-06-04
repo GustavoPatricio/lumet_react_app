@@ -1,7 +1,7 @@
 .sobre_sec { 
    width: 100vw;
    height: 100vh;
-   background-color: #f4f3f2;
+   background-color: #33343F;
    display: flex;
    flex-direction: column;
 }
@@ -21,6 +21,7 @@
 }
 
 .sobre_pictureWrapper img { 
+   box-shadow: .4px 2px 5px #00000081;
    border-radius: 4px;
    float: right;
    height: 90%;
@@ -37,7 +38,8 @@
 }
 
 .sobre_nomeContainer { 
-   background-color: red;
+   box-shadow: .4px 2px 5px #00000081;
+   background-color: #ff4f40;
    position: absolute;
    right: 20%;
    bottom: 5%;
@@ -48,11 +50,12 @@
 }
 
 .sobre_descricao { 
+   color: #f4f3f2;
    width: 70%;
    height: fit-content;
    margin-left: 10%;
    margin-bottom: 10%;
-   font-family: "inter";
+   font-family: "inter-regular";
    font-size: 1.2rem;
 }
 

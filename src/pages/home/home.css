@@ -76,6 +76,13 @@
  font-size: 1.5rem;
  padding: 1vh 2vw;
  border-radius: 6px;
+ transition: all .4s ease-in-out;
+}
+
+.lumetButton:hover { 
+  color: white;
+  text-decoration: none;
+  background-color: #d83f31;
 }
 
 /* media queries */
