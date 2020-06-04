@@ -33,6 +33,7 @@ class Home extends React.Component {
    componentDidMount() {
       document.title = "Lumet: home";
       this.animations();
+      window.scrollTo(0, 0);
    }
 
    render () { 

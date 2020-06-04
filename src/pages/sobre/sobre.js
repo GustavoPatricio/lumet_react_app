@@ -4,6 +4,11 @@ import patricio from '../images/patricio.png';
 import owsidd from '../images/owsidd.jpeg';
 
 class Sobre extends React.Component { 
+
+   componentDidMount() {
+      window.scrollTo(0, 0);
+   }
+
    render() { 
       return(
          <div>

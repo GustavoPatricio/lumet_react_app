@@ -18,6 +18,7 @@ class Contato extends React.Component {
    componentDidMount() { 
       document.title = "Lumet: contato"
       this.contactAnimation();
+      window.scrollTo(0, 0);
    }
 
    render () { 
