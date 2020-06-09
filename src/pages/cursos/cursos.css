@@ -1,0 +1,10 @@
+#anim_bolinhas { 
+   width: 100vw;
+   height: 80vh;
+   overflow: hidden;
+}
+
+#anim_bolinhas svg {
+   width: fit-content;
+   height: fit-content;
+}

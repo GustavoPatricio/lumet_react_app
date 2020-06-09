@@ -3,20 +3,21 @@ import { Link } from 'react-router-dom';
 import "./contato.css";
 import lottie from 'lottie-web';
 import contato from '../animations/contato.json';
+import Form from './form';
 
 class Contato extends React.Component { 
 
-   contactAnimation() { 
+   contactAnimation() { //Function that loads all the animation on the Component
       lottie.loadAnimation({
          container: document.getElementById("animContato"),
          renderer: 'svg',
          animationData: contato,
          loop: true
       });
-   }
+   };
 
-   componentDidMount() { 
-      document.title = "Lumet: contato"
+   componentDidMount() { // Set up basic Component stuf (eg Title, ScrollPosition, trigger animations )
+      document.title = "Lumet: contato";
       this.contactAnimation();
       window.scrollTo(0, 0);
    }
@@ -30,29 +31,7 @@ class Contato extends React.Component {
                      <div className="row">
                          <div id="animContato" data-aos="fade-up"></div>
                      </div>
-                     <form data-aos="fade-up">
-                         <div className="row">
-                             <input type="text" name="Nome" id="Nome" placeholder="Seu nome" required/>
-                         </div>
-                         <div className="row">
-                             <input type="email" name="Email" id="Email"  placeholder="Seu email" required/>
-                         </div>
-                         <div className="row">
-                             <input type="text" name="Empresa" id="Empresa"  placeholder="Sua empresa (opcional)"/>
-                         </div>
-                         <div className="row">
-                             <input type="tel" name="Telefone" id="Telefone"  placeholder="Telefone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"/>
-                         </div>
-                         <div className="row">
-                             <input type="text" name="Assunto" id="Assunto"  placeholder="Assunto" required/>
-                         </div>
-                         <div className="row">
-                             <textarea name="Mensagem" id="Mensagem" placeholder="Mensagem"></textarea>
-                         </div>
-                         <div className="row" style={{marginTop: '5vh'}}>
-                             <input type="submit" value="Enviar"/>
-                         </div>
-                     </form>
+                     <Form />
                   </div>
                </div>
             </div>

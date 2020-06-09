@@ -1,7 +1,7 @@
 .container-fluid { 
    width: 100vw;
    height: 120vh;
-   background-color: white;
+   background-color: #181818;
    padding-top: 5vh;
 }
 
@@ -27,17 +27,13 @@ input[type="text"], input[type="email"], input[type="tel"] {
    width: 100%;
    margin-bottom: 5vh;
    display: block;
-   background-color: white;
+   background-color: transparent;
    border: none;
-   border-bottom: 1px solid #1d1d1d;
+   border-bottom: 1px solid #f4f3f2;
    padding-left: .2vw;
    transition: all .5s ease-in-out;
    font-family: "inter-regular";
-   color: #1d1d1d;
-}
-
-input:valid { 
-   border-bottom-color: #00ffb3;
+   color: #f4f3f2;
 }
 
 input:focus { 
@@ -48,14 +44,15 @@ input:focus {
 textarea {
    padding: .2vh .2vw;
    width: 100%;
-   border: 1px solid #1d1d1d; 
+   border: 1px solid #f4f3f2; 
    height: 20vh;
    font-family: "inter-regular";
+   background-color: transparent;
+   color: #f4f3f2;
 }
 
 textarea:focus { 
    outline: none;
-
 }
 
 input[type="submit"] { 

@@ -1,17 +1,21 @@
 import React from 'react';
 import "./cursos.css";
-import animBolinhas from '../animations/bolinhas_bg.json';
+import tentando from '../animations/tentando.json';
 import lottie from 'lottie-web';
 
 class Cursos extends React.Component { 
 
    animations = () => { 
+      
       lottie.loadAnimation({
          container: document.getElementById("anim_bolinhas"),
          renderer: 'svg',
-         animationData: animBolinhas,
+         animationData: tentando,
          loop: true,
-         autoplay: true,
+         autoplay: true
+         // rendererSettings : { 
+         //    preserveAspectRatio: 'none'
+         // }
       });
    }
 
@@ -24,8 +28,8 @@ class Cursos extends React.Component {
    render () { 
 
       return (
-         <div id="Wrapper" style={{backgroundColor: 'black'}}>
-            <div id="anim_bolinhas" style= {{width: '20vw'}}>
+         <div id="Wrapper" style={{backgroundColor: '#33343F'}}>
+            <div id="anim_bolinhas">
 
             </div>
          </div>

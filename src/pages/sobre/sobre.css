@@ -1,7 +1,53 @@
+#sobre_background {
+   left: 0;
+   bottom: 0;
+   position: fixed;
+   z-index: 1;
+   width: 80vw;
+   height: 50vh;
+}
+
+/*
+   blue #33343f;
+   light #f4f3f2
+
+*/
+
+#sobre_base { 
+   background-color: #f4f3f2;
+   overflow-x: hidden;
+}
+
+/* lumet content */
+
+#sobre_lumet { 
+   margin: auto;
+   width: 50vw;
+}
+
+#sobre_lumet h1 { 
+   text-align: center;
+}
+
+#sobre_lumet p { 
+   font-family: "inter-regular";
+}
+
+/**/
+#sobre_content {
+   position: relative;
+   z-index: 2;
+}
+
+#sobre_background svg { 
+   height: 50vh;
+}
+
+
 .sobre_sec { 
    width: 100vw;
-   height: 100vh;
-   background-color: #33343F;
+   height: 80vh;
+   background-color: transparent;
    display: flex;
    flex-direction: column;
 }
@@ -50,7 +96,7 @@
 }
 
 .sobre_descricao { 
-   color: #f4f3f2;
+   color: #33343f;
    width: 70%;
    height: fit-content;
    margin-left: 10%;
