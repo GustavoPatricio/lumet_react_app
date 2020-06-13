@@ -1,7 +1,7 @@
 .container-fluid { 
    width: 100vw;
    height: 120vh;
-   background-color: #181818;
+   background-color: #33343f;
    padding-top: 5vh;
 }
 
@@ -20,12 +20,12 @@
 }
 
 form { 
-   margin-top: 10vh
+   margin-top: 5vh;
 }
 
 input[type="text"], input[type="email"], input[type="tel"] { 
    width: 100%;
-   margin-bottom: 5vh;
+   margin-top: 5vh;
    display: block;
    background-color: transparent;
    border: none;
@@ -49,6 +49,7 @@ textarea {
    font-family: "inter-regular";
    background-color: transparent;
    color: #f4f3f2;
+   margin-top: 5vh;
 }
 
 textarea:focus { 
@@ -63,14 +64,15 @@ input[type="submit"] {
    transition: all .4s;
    margin-left: auto;
    margin-right: auto;
-   border: 1px solid black;
+   border: 1px solid white;
+   color: white;
    padding: 1vh 1.5vw;
 }
 
 input[type="submit"]:hover { 
-   background-color: #ff4f40;
-   color: white;
-   border: 1px solid white;
+   background-color: white;
+   color: #33343f;
+   border: 1px solid #33343f;
 }
 
 @media (max-width: 768px) { 
