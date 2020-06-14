@@ -4,3 +4,75 @@
    color: white;
    position: absolute;
 }
+
+/* Form styling*/
+
+input[type="text"], input[type="email"], input[type="tel"] { 
+   width: 100%;
+   margin-top: 5vh;
+   display: block;
+   background-color: transparent;
+   border: none;
+   border-bottom: 1px solid #f4f3f2;
+   padding-left: .2vw;
+   transition: all .5s ease-in-out;
+   font-family: "inter-regular";
+   color: #f4f3f2;
+}
+
+input:focus { 
+   outline: none;
+   border-bottom-color: #05d8fd;
+}
+
+textarea {
+   padding: .2vh .2vw;
+   width: 100%;
+   border: 1px solid #f4f3f2; 
+   height: 20vh;
+   font-family: "inter-regular";
+   background-color: transparent;
+   color: #f4f3f2;
+   margin-top: 5vh;
+}
+
+textarea:focus { 
+   outline: none;
+}
+
+input[type="submit"] { 
+   background: none;
+   border: none;
+   font-family: "inter-bold";
+   font-size: 1.2rem;
+   transition: all .4s;
+   margin-left: auto;
+   margin-right: auto;
+   border: 1px solid white;
+   color: white;
+   padding: 1vh 1.5vw;
+}
+
+input[type="submit"]:hover { 
+   background-color: white;
+   color: #33343f;
+   border: 1px solid #33343f;
+}
+
+@media (max-width: 768px) { 
+   input[type="text"], input[type="email"], input[type="tel"] { 
+       padding-left: .4vw;
+   }
+
+   textarea { 
+       padding-left: .4vw;
+   }
+
+   input[type="submit"] { 
+       padding: 1vh 4vw;
+   }
+
+   #animContato { 
+       margin-top: 5vh;
+   }
+}
