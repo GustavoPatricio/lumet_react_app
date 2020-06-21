@@ -24,15 +24,16 @@ class Contato extends React.Component {
 
    render () { 
       return (
-         <div className="container-fluid" id="contatoWrapper"> 
-            <div className="row h100" id="FormWrapper">
-               <div className="col-12 justify-content-center">
-                  <div className="col-sm-12 col-md-4" style={{margin: 'auto'}}>
-                     <div className="row">
-                         <div id="animContato" data-aos="fade-up"></div>
-                     </div>
-                     <Form />
-                  </div>
+         <div className="container-fluid" id="contato_wrapper">
+            <div id="contato_title"> Entre em contato cosnosco! </div>
+            <div className="row justify-content-center h100">
+               <div className="col-11" id="contato_contentWrapper">
+                 
+               <div id="contato_innerWrapper">
+                  <Form />
+                  <div id="animContato"></div>
+               </div>
+
                </div>
             </div>
          </div>
