@@ -14,7 +14,6 @@ function Form() {
    return (
     <form onSubmit={handleSubmit(onSubmit)} data-aos="fade-up" autoComplete='off'>
         <div className="row">
-            
             <input type="text" name="nome" id="nome" ref={register({ required: true, maxLength: 50 })} placeholder="Seu nome"/>
             {errors.nome && errors.nome.type === "required" && <div style={{color: '#ff4f40', bottom: '0', fontSize: '.85rem'}}>Este campo é necessário</div>}
             {errors.nome && errors.nome.type === "maxLength" && <div style={{color: '#ff4f40', bottom: '0', fontSize: '.85rem'}}>Tamanho máximo do campo excedido (max: 50 caracteres)</div>}
