@@ -2,13 +2,23 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import InputMask from "react-input-mask";
 import './form.css';
-//O style do form está no contato.css
+import axios from 'axios';
 
 function Form() { 
    const {register, handleSubmit, errors } = useForm();
 
-   const onSubmit = data => { 
-       console.log(data);
+   const onSubmit = form => {
+
+       console.log(form);
+
+       axios.post("/api/email", form)
+        .then(res => { 
+           console.log(res);
+           console.log(res.data);
+        })
+        .catch(error => { 
+            console.log(error)
+        });
    }
 
    return (

@@ -25,3 +25,6 @@ yarn-error.log*
 
 # readme
 reactannotations.md
+
+#temporary sensitive data
+temporary_for_passwords.json

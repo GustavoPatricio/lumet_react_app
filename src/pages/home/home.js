@@ -75,8 +75,6 @@ class Home extends React.Component {
                      
                   </div>
             </div>
-
-
             <div className="container-fluid h100" id="section3Wrapper">
                   <div className="row justify-content-center h-100" > 
                      <div className="col-md-10 col-lg-5 col-xl-4"
